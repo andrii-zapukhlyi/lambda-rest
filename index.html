@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width", initial-scale=1.0, maximum-scale=1.0>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">	
 	<title>Lambda</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="normalize.css">
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&family=Lato&family=Open+Sans&family=Yeseva+One&display=swap" rel="stylesheet">	<script src="https://kit.fontawesome.com/ae3fffe5fd.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&family=Lato&family=Open+Sans&family=Yeseva+One&display=swap" rel="stylesheet">	<script src="https://kit.fontawesome.com/ae3fffe5fd.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -17,16 +18,16 @@
 	<section class="promo" id="Home">
 		<header class="header">
 			<div class="header__container">
-				<a href="#Home">
+				<a class="logo__link" href="#Home">
 					<img class="logo" src="http://d169hzb81ub7u3.cloudfront.net/restaurant/wp-content/uploads/sites/14/2014/12/logo.png" alt="Logo">
 				</a>
-				<nav class="header__nav-menu">
-					<a class="active_link" href="#Home">Home</a>
-					<a href="#About">About</a>
-					<a href="#Ingredients">Ingredients</a>
-					<a href="#Menu">Menu</a>
-					<a href="#Reviews">Reviews</a>
-					<a href="#Reservations">Reservations</a>
+				<nav class="header__nav">
+					<a class="nav__link active_link" href="#Home">Home</a>
+					<a class="nav__link" href="#About">About</a>
+					<a class="nav__link" href="#Ingredients">Ingredients</a>
+					<a class="nav__link" href="#Menu">Menu</a>
+					<a class="nav__link" href="#Reviews">Reviews</a>
+					<a class="nav__link" href="#Reservations">Reservations</a>
 				</nav>
 				<div class="soc-networks">
 					<a href="https://twitter.com/explore" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -34,6 +35,9 @@
 					<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
 				</div>
 			</div>
+			<div id="button" class="header__burger">
+						<span class="burger__span"></span>
+					</div>
 		</header>
 		<div class="promo__container">
 			<div class="promo__title">
@@ -41,8 +45,8 @@
 			</div>
 			<img class="promo__dec" src="img/sec-1/Decoration.png" alt="dec">
 			<div class="promo__btn">
-				<a href="#Reservations"><button class="promo__btn-1">BOOK A TABLE</button></a>
-				<a href="#Menu"><button class="promo__btn-2">SEE THE MENU</button></a>
+				<a class="promo__btn-link" href="#Reservations"><button class="promo__btn-1">BOOK A TABLE</button></a>
+				<a class="promo__btn-link" href="#Menu"><button class="promo__btn-2">SEE THE MENU</button></a>
 			</div>
 		</div>
 	</section>
@@ -52,7 +56,6 @@
 
 
 	<section id="About" class="about">
-		<div class="about__container">
 			<div class="about__content">
 				<h3 class="about__title">Just the right food</h3>
 				<img src="img/sec-2/Decoration.png" alt="dec" class="about__dec">
@@ -66,7 +69,6 @@
 				<img src="img/sec-2/cook.png" alt="cook" class="about__cook">
 			</div>
 			<img src="img/sec-2/dish.png" alt="dish" class="about__dish">
-		</div>
 	</section>
 
 
@@ -99,7 +101,6 @@
 
 
 	<section id="Menu" class="menu">
-		<div class="menu__container">
 			<div class="menu__content-1">
 				<div class="menu-1">
 					<div class="menu__content-text">
@@ -260,9 +261,11 @@
 
 		<section id="Reservations" class="reservations bg">
 			<div class="container reservations__cont">
+				<div class="reservations__images">
 						<img src="img/sec-6/image.png" alt="food" class="reservations__img-1"><!--
 						--><img src="img/sec-6/image-1.png" alt="food" class="reservations__img-2"><!--
-					--><div class="reservations__block">
+					--></div>
+					<div class="reservations__block">
 						<div class="reservations__desc">
 							<h3 class="reservations__title">Just the right food</h3>
 							<img src="img/sec-6/dec.png" alt="dec" class="reservations__dec">
@@ -283,7 +286,7 @@
 										<input class="reservations__form-input" type="text" name="name" placeholder="your name *">
 									</label>
 									<label>
-										Name
+										Email
 										<input type="email" name="email" placeholder="your email *">
 									</label>
 								</div>
@@ -320,26 +323,25 @@
 			<!-- Footer -->
 
 
-			<footer class="footer">
-				<div class="container footer">
+			<footer class="footer">	
 					<div class="footer__block footer__block-1">
 						<h3 class="footer__block__title">About Us</h3>
 						<img src="img/zfooter/image.png" alt="dec" class="footer__block__img">
 						<div class="footer__block_text">
-						<p class="footer__block__text">Lambda's new and expanded Chelsea location <br>
-							represents a truly authentic <strong>Greek</strong> patisserie, <br>
-							featuring breakfasts of fresh croissants and <br>
-							steaming bowls of café. <br> 
-						Lamda the best restaurant in town</p>
-					</div>
+							<p class="footer__block__text">Lambda's new and expanded Chelsea location <br>
+								represents a truly authentic <strong>Greek</strong> patisserie, <br>
+								featuring breakfasts of fresh croissants and <br>
+								steaming bowls of café. <br> 
+							Lamda the best restaurant in town</p>
+						</div>
 					</div>
 					<div class="footer__block footer__block-2">
 						<h3 class="footer__block__title">Opening Hours</h3>
 						<img src="img/zfooter/image-1.png" alt="dec" class="footer__block__img">
 						<div class="footer__block_text">
-						<p class="footer__block__text"><strong class="strong">Mon-Thu:</strong> 7:00am-8:00pm</p>
-						<p class="footer__block__text"><strong class="strong">Fri-Sun:</strong> 7:00am-10:00pm</p>
-					</div>
+							<p class="footer__block__text"><strong class="strong">Mon-Thu:</strong> 7:00am-8:00pm</p>
+							<p class="footer__block__text"><strong class="strong">Fri-Sun:</strong> 7:00am-10:00pm</p>
+						</div>
 						<div class="footer__block-2__cards">
 							<i class="fab fa-cc-mastercard"></i>
 							<i class="fab fa-cc-paypal"></i>
@@ -352,15 +354,17 @@
 						<img src="img/zfooter/image-2.png" alt="dec" class="footer__block__img">
 						<strong class="strong"><p class="footer__block__text footer__block-3__text">19th Paradise Street Sitia</p>
 							<div class="footer__block_text">
-							<p class="footer__block__text footer__block-3__text">128 Meserole Avenue</p></strong>
-							<div class="footer__block-3__soc">
-								<i class="fab fa-facebook-f"></i>
-								<i class="fab fa-youtube"></i>
-								<i class="fab fa-twitter"></i>
+								<p class="footer__block__text footer__block-3__text">128 Meserole Avenue</p></strong>
+								<div class="footer__block-3__soc">
+									<i class="fab fa-facebook-f"></i>
+									<i class="fab fa-youtube"></i>
+									<i class="fab fa-twitter"></i>
+								</div>
 							</div>
-						</div>
 						</div>
 					</div>
 				</footer>
+				<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+				<script src="script.js"></script>
 			</body>
 			</html>
